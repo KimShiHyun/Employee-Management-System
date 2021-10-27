@@ -89,7 +89,7 @@ const addDepartment = () => {
       connection.query(query, [answer.departmentQ], (err, res) => {
         if (err) throw err;
         console.table(res);
-        launchApp();
+        console.log("New department was added successfully");
       });
     });
 };
@@ -124,7 +124,7 @@ const addRole = () => {
             (err, res) => {
               if (err) throw err;
               console.table(res);
-              launchApp();
+              console.log("New department was added successfully");
             }
           );
         });
@@ -196,7 +196,7 @@ const addEmployee = () => {
         (err, res) => {
           if (err) throw err;
           console.table(res);
-          launchApp();
+          console.log("New employee was added succesfully");
         }
       );
     });
@@ -266,7 +266,7 @@ const updateEmployeeRole = () => {
           connection.query(query, [roleId, val.lastName], (err, res) => {
             if (err) throw err;
             console.table(res);
-            launchApp();
+            console.log(res.affectedRows + "Employee updated!\n");
           });
         });
     }
