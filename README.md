@@ -40,7 +40,7 @@ SO THAT I can organize and plan my business
 
 ## Links
 
-- [Video of CL App](https://youtu.be/-2JL7xmhLWQ)
+- [Video of CL App](https://youtu.be/GNhkSsG1nLs)
 - [Github Repo](https://github.com/KimShiHyun/Employee-Management-System)
 
 ## Screenshot
