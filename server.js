@@ -90,6 +90,7 @@ const addDepartment = () => {
         if (err) throw err;
         console.table(res);
         console.log("New department was added successfully");
+        launchApp();
       });
     });
 };
@@ -125,6 +126,7 @@ const addRole = () => {
               if (err) throw err;
               console.table(res);
               console.log("New department was added successfully");
+              launchApp();
             }
           );
         });
@@ -196,7 +198,8 @@ const addEmployee = () => {
         (err, res) => {
           if (err) throw err;
           console.table(res);
-          console.log("New employee was added succesfully");
+          console.log("New employee was added successfully");
+          launchApp();
         }
       );
     });
@@ -267,6 +270,7 @@ const updateEmployeeRole = () => {
             if (err) throw err;
             console.table(res);
             console.log(res.affectedRows + "Employee updated!\n");
+            launchApp();
           });
         });
     }
